@@ -99,6 +99,15 @@ local_users:
   sha512_password: $6$arista$p/aqVleEs/dXVLvCagHJXVQN/1Q4SWbUojl.Y1D27zAMWNC8dr6mQrVMZJD2nQ.V51KbPZ1B5xkZiHy7Aq4nk0
   ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDYUYD3nPaYX1tIB5YVMcEG1GJYaJK9/YxGF3m/nTiirm1q8OGvDo8tzNeQmoL3spR9/lxFXeQP2qpFUSU1Y4xxXODOhD7GVUxEYVtR2M1/Xu7KWzvb9j7EGWZAx9ss6s3XyI8NnHShM/Yan21aNi8rKrQanS9XaYpC9NaiD3Kx4LhKutkC4z7eMzbidLIrls+oS/OGE2SAdmnlev2xxRtSH3L2DMK76myShhD5QezWupC6uaOJLy3lOb3GyQrtgEGB4jY2SSS5EWlvxl2syl+OCzUyuYu1xcfBns3Nmj1FAc4TcTjoTLlHEgYyUHL0qSls8NC5e1PPizJB8HnJ7V3R
     arista@rochester-day2-18-c3c84b07-eos
+logging:
+  vrfs:
+  - name: default
+    source_interface: Management0
+    hosts:
+    - name: 10.200.0.108
+      protocol: udp
+    - name: 10.200.1.108
+      protocol: udp
 loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
